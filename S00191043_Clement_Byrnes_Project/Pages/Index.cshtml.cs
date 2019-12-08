@@ -17,9 +17,10 @@ namespace S00191043_Clement_Byrnes_Project.Pages
             _logger = logger;
         }
 
+        public string Message { get; set; }
         public void OnGet()
         {
-
+            Message = "Time on the server is " + DateTime.Now.ToString();
         }
     }
 }
